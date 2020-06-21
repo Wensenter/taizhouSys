@@ -14,6 +14,7 @@ html {
   background-size: 100% 100%;
   padding-top: 125px;
   box-sizing: border-box;
+  position: relative;
 }
 .wrap .content {
   margin: 0 auto;
@@ -32,6 +33,7 @@ html {
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 32px 40px -2px rgba(6,22,73,0.12), 0px 0px 1px 0px rgba(6,22,73,0.06);
+  margin-bottom: 135px;
 }
 .wrap .content .login-wrap .title {
   margin-top: 175px;
@@ -137,6 +139,25 @@ html {
   font-size: 16px;
   color: #fff;
   font-weight: 500;
+  cursor: pointer;
+}
+.wrap .content .login-wrap .login-box form .form-item .msg-yzm {
+  width: 200px;
+  height: 42px;
+  border: 1px solid #d7dde4;
+  border-radius: 2px;
+  text-indent: 15px;
+  outline: none;
+}
+.wrap .content .login-wrap .login-box form .form-item .msg-btn {
+  width: 100px;
+  height: 42px;
+  background: #5184ee;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
 }
 .wrap .content .login-wrap .login-box form .op {
   display: flex;
@@ -156,4 +177,84 @@ html {
   text-decoration: none;
   font-size: 14px;
   line-height: 20px;
+}
+.wrap .content .login-wrap .login-box .other-login-type {
+  margin-top: 32px;
+  position: relative;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-title {
+  font-size: 10px;
+  color: #b9c0cc;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-title:before,
+.wrap .content .login-wrap .login-box .other-login-type .other-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 127px;
+  background: #e3e8ee;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-title:before {
+  left: 0;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-title:after {
+  right: 0;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list li {
+  margin-right: 40px;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #b9c0cc;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list li img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #c3cbd6;
+  margin-bottom: 8px;
+  border: 0;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list li:last-child {
+  margin-right: 0;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list .qq:hover img {
+  background: #0091ff;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list .wb:hover img {
+  background: #ff5809;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list .wx:hover img {
+  background: #6ab242;
+}
+.wrap .content .footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wrap .content .footer p {
+  width: 1200px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #c3cbd6;
+  border-top: 1px solid #d7dde4;
 }

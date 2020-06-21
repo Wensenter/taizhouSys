@@ -33,9 +33,9 @@
                         <div class="form-item">
                             <div class="input-box">
                                 <img src="img/icon_password.png" alt="psw">
-                                <input type="text" class="psw" placeholder="请输入密码">
-                                <img src="img/icon_eye_close.png" class="psw-pic hide-psw">
-                                <img src="img/icon_eye_open.png" class="psw-pic show-psw" style="display: none;">
+                                <input type="password" class="psw" placeholder="请输入密码">
+                                <img src="img/icon_eye_close.png" onclick="checkoutPsw(this)" class="psw-pic hide-psw">
+                                <img src="img/icon_eye_open.png" onclick="checkoutPsw(this)" class="psw-pic show-psw" style="display: none;">
                             </div>
                         </div>
                         <div class="form-item">
@@ -50,18 +50,18 @@
                                 <input type="checkbox">
                                 忘记密码
                             </label>
-                            <a href="#">忘记密码？</a>
+                            <a href="retireve-password-step1.html">忘记密码？</a>
                         </div>
                     </form>
                     <form class="login-for-msg" style="display: none;">
                         <div class="form-item">
                             <div class="input-box">
-                                <img src="" class="phone-pic">
-                                <input type="text" class="phone">
+                                <img src="img/icon_phone.png" class="phone-pic">
+                                <input type="text" class="phone" placeholder="请输手机号码">
                             </div>
                         </div>
                         <div class="form-item">
-                            <input type="text" class="msg-yzm">
+                            <input type="text" class="msg-yzm" placeholder="请输入手机验证码">
                             <button type="button" class="msg-btn">获取验证码</button>
                         </div>
                         <div class="form-item">
@@ -71,17 +71,23 @@
                     <div class="other-login-type">
                         <p class="other-title">其他方式</p>
                         <ul class="other-login-list">
-                            <li>
-                                <img src="">
-                                <span>QQ</span>
+                            <li class="qq">
+                                <a href="#">
+                                    <img src="">
+                                    <span>QQ</span>
+                                </a>
                             </li>
-                            <li>
-                                <img src="">
-                                <span>微博</span>
+                            <li class="wb">
+                                <a href="#">
+                                    <img src="">
+                                    <span>微博</span>
+                                </a>
                             </li>
-                            <li>
-                                <img src="">
-                                <span>微信</span>
+                            <li class="wx">
+                                <a href="#">
+                                    <img src="">
+                                    <span>微信</span>
+                                </a>
                             </li>
                         </ul>
                     </div>

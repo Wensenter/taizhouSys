@@ -12,6 +12,7 @@ body,html
     background-size 100% 100%
     padding-top 125px
     box-sizing border-box
+    position relative
     .content
         margin 0 auto
         width 1200px
@@ -27,6 +28,7 @@ body,html
             display flex
             justify-content space-between
             box-shadow 0px 32px 40px -2px rgba(6,22,73,0.12),0px 0px 1px 0px rgba(6,22,73,0.06)
+            margin-bottom 135px
             .title
                 margin-top 175px
                 h1
@@ -117,6 +119,23 @@ body,html
                             font-size 16px
                             color #fff
                             font-weight 500
+                            cursor pointer
+                        .msg-yzm
+                            width 200px
+                            height 42px
+                            border 1px solid #D7DDE4
+                            border-radius 2px
+                            text-indent 15px
+                            outline none
+                        .msg-btn
+                            width 100px
+                            height 42px
+                            background #5184EE
+                            color #FFFFFF
+                            font-size 14px
+                            outline none
+                            border 0
+                            cursor pointer
                     .op
                         display flex
                         justify-content space-between
@@ -132,4 +151,68 @@ body,html
                             color #5184EE
                             text-decoration none
                             font-size 14px
-                            line-height 20px 
+                            line-height 20px
+                .other-login-type
+                    margin-top 32px 
+                    position relative
+                    .other-title
+                        font-size 10px
+                        color #B9C0CC
+                        font-weight 500
+                        position relative
+                        text-align center
+                        left 0
+                        width 100%
+                        &:before,&:after
+                            content ''
+                            display block
+                            position absolute
+                            height 1px
+                            width 127px
+                            background #E3E8EE
+                            top 50%
+                            transform translateY(-50%)
+                        &:before
+                            left 0
+                        &:after
+                            right 0
+                    .other-login-list
+                        margin-top 18px
+                        display flex
+                        justify-content center
+                        li
+                            margin-right 40px
+                            a
+                                text-decoration none
+                                display flex
+                                flex-direction column
+                                align-items center
+                                font-size 12px
+                                color #B9C0CC
+                            img
+                                width 36px
+                                height 36px
+                                border-radius 50%
+                                background #C3CBD6
+                                margin-bottom 8px
+                                border 0
+                            &:last-child
+                                margin-right 0
+                        .qq:hover img
+                            background #0091FF
+                        .wb:hover img
+                            background #FF5809
+                        .wx:hover img
+                            background #6AB242
+        .footer
+            position absolute
+            bottom 0
+            left 50%
+            transform translateX(-50%)
+            p
+                width 1200px
+                padding 20px 0
+                text-align center
+                font-size 14px
+                color #C3CBD6
+                border-top 1px solid #D7DDE4
