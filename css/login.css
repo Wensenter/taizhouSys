@@ -86,6 +86,7 @@ html {
 }
 .wrap .content .login-wrap .login-box form .form-item {
   margin-bottom: 15px;
+  position: relative;
 }
 .wrap .content .login-wrap .login-box form .form-item .input-box {
   display: flex;
@@ -159,6 +160,17 @@ html {
   border: 0;
   cursor: pointer;
 }
+.wrap .content .login-wrap .login-box form .form-item .text-error {
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  color: #f04138;
+  font-size: 12px;
+  line-height: 17px;
+}
+.wrap .content .login-wrap .login-box form .has-error {
+  margin-bottom: 20px;
+}
 .wrap .content .login-wrap .login-box form .op {
   display: flex;
   justify-content: space-between;
@@ -224,24 +236,31 @@ html {
   font-size: 12px;
   color: #b9c0cc;
 }
-.wrap .content .login-wrap .login-box .other-login-type .other-login-list li img {
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list li .img-wrap {
   width: 36px;
   height: 36px;
   border-radius: 50%;
   background: #c3cbd6;
   margin-bottom: 8px;
   border: 0;
+  text-align: center;
+  line-height: 36px;
+}
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list li .img-wrap img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
 }
 .wrap .content .login-wrap .login-box .other-login-type .other-login-list li:last-child {
   margin-right: 0;
 }
-.wrap .content .login-wrap .login-box .other-login-type .other-login-list .qq:hover img {
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list .qq:hover .img-wrap {
   background: #0091ff;
 }
-.wrap .content .login-wrap .login-box .other-login-type .other-login-list .wb:hover img {
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list .wb:hover .img-wrap {
   background: #ff5809;
 }
-.wrap .content .login-wrap .login-box .other-login-type .other-login-list .wx:hover img {
+.wrap .content .login-wrap .login-box .other-login-type .other-login-list .wx:hover .img-wrap {
   background: #6ab242;
 }
 .wrap .content .footer {

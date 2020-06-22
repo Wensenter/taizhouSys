@@ -73,6 +73,7 @@ body,html
                 form
                     .form-item
                         margin-bottom 15px
+                        position relative
                         .input-box
                             display flex
                             justify-content space-between
@@ -136,6 +137,15 @@ body,html
                             outline none
                             border 0
                             cursor pointer
+                        .text-error
+                            position absolute
+                            left 0
+                            bottom -17px
+                            color #F04138
+                            font-size 12px
+                            line-height 17px
+                    .has-error
+                        margin-bottom 20px
                     .op
                         display flex
                         justify-content space-between
@@ -189,20 +199,26 @@ body,html
                                 align-items center
                                 font-size 12px
                                 color #B9C0CC
-                            img
+                            .img-wrap
                                 width 36px
                                 height 36px
                                 border-radius 50%
                                 background #C3CBD6
                                 margin-bottom 8px
                                 border 0
+                                text-align center
+                                line-height 36px
+                                img
+                                    width 15px
+                                    height 15px
+                                    vertical-align middle
                             &:last-child
                                 margin-right 0
-                        .qq:hover img
+                        .qq:hover .img-wrap
                             background #0091FF
-                        .wb:hover img
+                        .wb:hover .img-wrap
                             background #FF5809
-                        .wx:hover img
+                        .wx:hover .img-wrap
                             background #6AB242
         .footer
             position absolute
